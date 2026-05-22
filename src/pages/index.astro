@@ -125,7 +125,6 @@ const targetDate = "2026-07-25T14:00:00";
         align-items: center;
         justify-content: center;
         font-family: "Cinzel", serif;
-        color: #fff;
         position: relative;
       }
 
@@ -348,33 +347,35 @@ const targetDate = "2026-07-25T14:00:00";
         }
       .disclaimer {
         font-family: "Cinzel", serif;
-        font-weight: 600;
-        font-size: 0.85rem;
-        color: #fff;
+        font-weight: 500;
+        font-size: 0.8rem;
+        color: rgba(255, 255, 255, 0.75);
         margin-bottom: 1.5rem;
         letter-spacing: 1px;
-        text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9);
+        text-shadow: 0 2px 6px rgba(0, 0, 0, 0.9);
         animation: fadeInUp 1s ease-out 0.1s both;
-        background: rgba(0, 0, 0, 0.55);
+        background: rgba(0, 0, 0, 0.5);
         backdrop-filter: blur(4px);
-        padding: 0.6rem 1.2rem;
-        border-radius: 8px;
-        border: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 0.5rem 1rem;
+        border-radius: 6px;
+        border: 1px solid rgba(255, 255, 255, 0.06);
         max-width: 600px;
         margin-left: auto;
         margin-right: auto;
-        line-height: 1.5;
+        line-height: 1.4;
       }
 
       .disclaimer a {
-        color: #ffd700;
-        text-decoration: none;
-        font-weight: 700;
-        transition: opacity 0.2s;
+        color: #e6b800;
+        text-decoration: underline;
+        text-decoration-color: rgba(230, 184, 0, 0.3);
+        text-underline-offset: 3px;
+        font-weight: 600;
+        transition: color 0.2s;
       }
 
       .disclaimer a:hover {
-        opacity: 0.8;
+        color: #ffd700;
       }
 
       .logo {
