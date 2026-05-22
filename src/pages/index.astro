@@ -12,6 +12,10 @@ const targetDate = "2026-07-25T14:00:00";
   </head>
   <body>
     <main>
+      <p class="disclaimer">
+        Página no oficial — Esta es la página oficial:
+        <a href="https://www.infolavelada.com" target="_blank" rel="noopener noreferrer">www.infolavelada.com</a>
+      </p>
       <img src="/logo.png" alt="La Velada del Año" class="logo" />
       <div class="social-links">
         <a href="https://www.twitch.tv/ibai" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitch">
@@ -341,7 +345,38 @@ const targetDate = "2026-07-25T14:00:00";
         .separator {
           font-size: 2.5rem;
         }
-        .logo {
+      .disclaimer {
+        font-family: "Cinzel", serif;
+        font-weight: 600;
+        font-size: 0.85rem;
+        color: #fff;
+        margin-bottom: 1.5rem;
+        letter-spacing: 1px;
+        text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9);
+        animation: fadeInUp 1s ease-out 0.1s both;
+        background: rgba(0, 0, 0, 0.55);
+        backdrop-filter: blur(4px);
+        padding: 0.6rem 1.2rem;
+        border-radius: 8px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 1.5;
+      }
+
+      .disclaimer a {
+        color: #ffd700;
+        text-decoration: none;
+        font-weight: 700;
+        transition: opacity 0.2s;
+      }
+
+      .disclaimer a:hover {
+        opacity: 0.8;
+      }
+
+      .logo {
           max-width: 280px;
         }
         .btn {
